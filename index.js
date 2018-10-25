@@ -1,6 +1,9 @@
 const common = require('./lib/common');
 
 async function toSteps(exercise, intensity, minutes) {
+  common.checkType(exercise, 'string');
+  common.checkType(intensity, 'number');
+  common.checkType(minutes, 'number');
   const conversions = await common.readFile('config/exerciseToSteps.json');
   const thisExercise = (conversions[exercise.toLowerCase()]) ? conversions[exercise.toLowerCase()] : 'void';
   const thisIntensity = intensity - 1;
