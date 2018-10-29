@@ -67,6 +67,21 @@ weighttraining
 yardwork  
 yoga  
 ```
+
+## Intensity  
+Intensity is determined by effort exerted. For example, performing the exercise for leisure with light to minimal impact on breathing would be intensity 1 or 2. More competitive exercise with elevated heart rate e.g. 90 - 149 would be intensity 3 or 4. Very elevated heart rate and level of exercise unsustainable for more than ten minutes would be intensity 5.
+
+Examples:
+Hiking uphill at a fast pace might be 3 or 4. Hiking on the same incline with additional weight at the same pace would be intensity 5.  
+  
+Kicking a football against a wall would be 1. Playing 11 a side would be 3 or 4. 4-a-side football for ten minutes would be a 5.  
+  
+HR [Intensity]  
+0 - 69 [1]  
+70 - 89 [2]  
+90 - 119 [3]  
+120 - 149 [4]  
+150+ [5]  
 ---
 
 ## toSteps(exercise, intensity, minutes)
