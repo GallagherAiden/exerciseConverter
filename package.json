@@ -1,6 +1,6 @@
 {
   "name": "exerciseconverter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "converter for exercise into steps",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,22 @@
     "lint-fix": "eslint --fix .",
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GallagherAiden/exerciseConverter"
+  },
+  "keywords": [
+    "exercise",
+    "step converter",
+    "step conversion",
+    "exercise to step conversion",
+    "heart rate steps",
+    "heart rate",
+    "heart rate exercise steps",
+    "heart rate exercise",
+    "minutes",
+    "HR"
+  ],
   "author": "aiden.g@live.co.uk",
   "license": "ISC",
   "devDependencies": {
