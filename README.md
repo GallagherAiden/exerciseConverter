@@ -1,6 +1,8 @@
 # Exercise Converter
 ---
-version 0.0.3 -> updated to fix security vulnerability in v0.0.2 in dependency package
+version 1.0.0
+-> security updates
+-> additional tests
 
 ## Overview
 This module allows exercises to be converted into steps. It uses public data available from the University of Vermonts website:  http://www.uvm.edu/hrs/healthy/archive/steps.html
