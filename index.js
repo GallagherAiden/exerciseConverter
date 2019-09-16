@@ -13,7 +13,7 @@ async function toSteps(exercise, intensity, minutes) {
     }
     throw new Error(`Please provide an intensity between 1 and ${thisExercise.length}`);
   }
-  return new Error(`Unrecognised exercise: ${exercise}`);
+  throw new Error(`Unrecognised exercise: ${exercise}`);
 }
 
 async function toStepsAvgHR(exercise, ahr, minutes) {
@@ -27,9 +27,8 @@ async function toStepsAvgHR(exercise, ahr, minutes) {
     if (common.isBetween(thisIntensity, -1, thisExercise.length)) {
       return thisExercise[thisIntensity] * minutes;
     }
-    throw new Error(`Please provide an intensity between 1 and ${thisExercise.length}`);
   }
-  return new Error(`Unrecognised exercise: ${exercise}`);
+  throw new Error(`Unrecognised exercise: ${exercise}`);
 }
 
 async function toStepsHRpm(exercise, hrpm) {
@@ -45,9 +44,8 @@ async function toStepsHRpm(exercise, hrpm) {
         totalSteps += thisExercise[thisIntensity];
         return 0;
       }
-      throw new Error(`Please provide an intensity between 1 and ${thisExercise.length}`);
     }
-    return new Error(`Unrecognised exercise: ${exercise}`);
+    throw new Error(`Unrecognised exercise: ${exercise}`);
   });
   return totalSteps;
 }
